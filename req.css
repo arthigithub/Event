@@ -1,0 +1,59 @@
+
+
+.containerdate
+{
+    
+     width: 35pc;
+    margin-left: 14.8pc;
+  
+}
+input{
+    width: 300px;
+    height: 50px;
+}
+/*order*/
+/*datetime*/
+
+
+p{
+    font-family: "Times New Roman",cursive;
+}
+h3{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.col-25{
+   float: left;
+    margin-block-start: 1rem;
+    
+}
+.col-50{
+    float: right;
+    margin-right: 20%;
+}
+.row{
+    margin: 10px;
+    
+}
+
+.label
+{
+    margin-left: 15px;
+}
+
+.submit
+{
+    width: 100px;
+    height: 35px;
+    margin-left: 355%;
+    background-color: rgb(11, 156, 48);
+}
+
+.order
+{
+    width: 35pc;
+   
+    border: 2px solid black;
+    background-color: lightgray;
+    margin-left: 10pc;
+}

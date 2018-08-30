@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="vendorcheck.css">
+<link rel="stylesheet" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <script src="main.js"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Courgette|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+    </style>
+       
+
+
+</head>
+<body>
+        <div style="background-color: olivedrab">
+    <div style="background-color:  rgb(10, 1, 26)">
+    <div>
+            <p align="center" style="font-size: 5.5pc;font-family: 'Tangerine', cursive; font-weight:900;
+            height: 6pc;color: white;" class="animated zoomIn">VenYou
+                </p>
+          
+        </div>
+    
+        <div id="navbar">
+        
+
+                <a href="singlepg.html" class="a">Home</a>
+                <a href="singlepg.html #About">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="singlepg.html #feedback">Feedback</a>
+                <a href="index.html">Login</a>
+                <a href="singlepg.html #contact">Contact us</a>
+          
+          
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="mynewFunction()">Services
+                  </button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="wedding.html">Wedding</a><br>
+                    <a href="birthday.html">Birthday</a><br>
+                    <a href="naming.html">Naming ceremony</a><br>
+                    <a href="concert.html">Concerts</a><br>
+                    <a href="office.html">Official</a><br>
+                    <a href="festival.html">Festivals</a><br>
+                    <a href="college.html">College Events</a><br>
+          
+                  </div>
+                </div>
+               
+              </div>
+              </div>
+          
+          
+
+           <script>
+             window.onscroll = function() {myFunction()};
+
+             var navbar = document.getElementById("navbar");
+             var sticky = navbar.offsetTop;
+
+             function myFunction() {
+               if (window.pageYOffset >= sticky) {
+                 navbar.classList.add("sticky")
+               } else {
+                 navbar.classList.remove("sticky");
+               }
+             }
+
+             function mynewFunction() {
+                 document.getElementById("myDropdown").classList.toggle("show");
+             }
+
+             // Close the dropdown if the user clicks outside of it
+             window.onclick = function(e) {
+               if (!e.target.matches('.dropbtn')) {
+                 var myDropdown = document.getElementById("myDropdown");
+                   if (myDropdown.classList.contains('show')) {
+                     myDropdown.classList.remove('show');
+                   }
+               }
+             }
+             </script>
+
+<div class="vendorcontainer">
+    <br>
+    <h1 align="center" style="font-family: 'Merriweather', serif;font-size: 4pc;
+    font-family: 'Eczar', serif;">Our Vendors</h1>
+<br><br>
+    <div class="vleft">
+        <h1 align="center" style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Food</b></h1>
+            <img src="images/male.png" class="vimg">
+            <div align="center">
+                <p><b>
+                    Name:Shravan<br>
+                    Contact no.: 9834021459
+                </b></p>
+               
+                </div>
+
+        </div>
+
+        <div class="vcenter">
+                <h1 align="center"  style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Cake</b></h1>
+                <img src="images/male.png" class="vimg">
+                <div align="center">
+                        <p><b>
+                                Name:Shravan<br>
+                                Contact no.: 9834021459
+                            </b></p>
+                           
+                    </div>
+         </div>
+
+            <div class="vright">
+                    <h1 align="center"  style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Drinks</b></h1>
+            <img src="images/male.png" class="vimg">
+            <div align="center">
+                    <p><b>
+                            Name:Shravan<br>
+                            Contact no.: 9834021459
+                        </b></p>
+                       
+                </div>
+                </div>
+<br><br>
+                <div class="vleft">
+                        <h1 align="center"  style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Music</b></h1>
+                            <img src="images/male.png" class="vimg">
+                            <div align="center">
+                                    <p><b>
+                                            Name:Shravan<br>
+                                            Contact no.: 9834021459
+                                       </b> </p>
+                                       
+                                </div>
+                
+                        </div>
+                
+                        <div class="vcenter">
+                                <h1 align="center"  style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Photography</b></h1>
+                                <img src="images/male.png" class="vimg">
+                                <div align="center">
+                                        <p><b>
+                                                Name:Shravan<br>
+                                                Contact no.: 9834021459
+                                            </b></p>
+                                 </div>
+                         </div>
+                
+                            <div class="vright">
+                                    <h1 align="center"  style="    font-family: 'Allura', cursive;font-size: 3pc;"><b>Lighting</b></h1>
+                            <img src="images/male.png" class="vimg">
+                            <div align="center">
+                                    <p><b>
+                                            Name:Shravan<br>
+                                            Contact no.: 9834021459
+                                        </b></p>
+                                       
+                                </div>
+                                </div>
+                
+
+    </div>
+    <div class="eventfooter">
+  
+            <footer><b>&copy;CopyrightReservedforVenyou</b></footer>
+            </div>
+            </div>
+          
+</body>
+</html>

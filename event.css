@@ -1,0 +1,71 @@
+.eventfooter
+{
+  margin-top: 3pc;
+  margin-left: 35pc;
+  color: black;
+  
+}
+
+.vcleft
+{
+  color: white;
+  display: inline-block;
+  margin-left: 27pc;
+}
+
+.vcright
+{
+  color: white;
+display: inline-block;
+  margin-left: 4pc;
+}
+
+#EH
+{
+  margin-left: 20px;
+}
+
+#animatedhead
+{
+  animation-duration: 5s;
+}
+
+/* to place the button at the center*/
+
+#btn\ success
+{
+  margin-left: 37pc;
+  width: 7pc;
+  height: 2.5pc;
+  font-size: 1.5pc;
+}
+
+/*get the outer shape of all the buttons like next,order and etc */
+button{
+  background-color: #494f;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 2px;
+  margin-left: 370px;
+  font-size: 1.1rem;
+border-radius: 5px;
+}
+
+body{
+  margin-left:1%;
+}
+
+
+
+.wedimg{
+  width: 442px;
+  padding: 10px;
+height: 300px;
+}
+
+/*.wedimg:hover{
+  border: 5px solid black;
+}*/
+
+

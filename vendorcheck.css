@@ -1,0 +1,82 @@
+.chkremove
+{
+  margin-left: 19pc;
+  height: 2pc;
+  border: darkgray;
+  background-color: lightgrey;
+  color: black;
+  font-size: 14px;
+  border-radius: 0px; 
+  
+}
+
+
+.cbox
+{
+  margin-left: 30px;
+}
+
+.checkform
+{
+  margin-left: 30px;
+}
+
+.checkdiv
+{
+  background-image: url('images/brown.jpg');
+  border: 5px solid black;
+  width: 30pc;
+  height: 30pc;
+  margin-left: 30pc;
+  margin-top: 2pc;
+  border-radius: 10px;
+  
+}
+
+.vleft
+{
+  
+ display: inline-block;
+  margin-left: 5.5pc;
+  width: 16pc;
+  border: 2px solid black;
+  background-color: burlywood;
+  padding: 2pc;
+ }
+
+.vcenter
+{
+ display: inline-block;
+    margin-left: 10pc;
+  width: 16pc;
+  border: 2px solid black;
+  background-color: burlywood;
+  padding: 2pc;
+ }
+
+.vright
+{
+ display: inline-block;
+   margin-left: 10pc;
+  width: 16pc;
+  border: 2px solid black;
+  background-color: burlywood;
+  padding: 2pc;
+ }
+
+.vimg
+{
+  width: 6pc;
+  margin-left: 3pc;
+}
+
+.vendorcontainer
+{
+  background-color: rgb(238, 190, 58);
+  width: 82pc;
+  height: 55pc;
+  border: 1pc solid rgb(77, 59, 3);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+}

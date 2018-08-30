@@ -1,0 +1,29 @@
+body{
+    margin-left: 4%;
+  }
+  h1{
+    
+    text-align: center;
+    margin: 2px 0 50px;
+  }
+  h3{
+     
+    font-size: 3rem;
+  }
+  .gallery{
+    margin: 10px 50px;
+    
+  
+  }
+  .gallery img{
+    width: 278px;
+    height: 200px;
+    padding: 10px;
+    filter: grayscale();
+    transition: 1s;
+  }
+  .gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/billing.js"></script>
+
+
+        <!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link rel="stylesheet" type="text/css" href="nav.css" />
+        
+
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Courgette|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+       
+
+        </style>
+
+</head>
+
+        
+    <body ng-app="myApp" ng-controller="LRController" style="background-color:rgb(217, 222, 226) ">
+
+
+            <div style="background-color: rgb(10, 1, 26)">
+                    <div>
+                  <p align="center" style="font-size: 6pc;font-family: 'Tangerine', cursive; font-weight:900;height: 8pc;
+                  color:rgb(245, 245, 245);" class="animated zoomIn">VenYou
+                    </p>
+                    </div>
+                    
+                    <div id="navbar">
+        
+
+                        <a href="singlepg.html" class="b">Home</a>
+                        <a href="singlepg.html #About">About</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="singlepg.html #feedback">Feedback</a>
+                        <a href="index.html">Login</a>
+                        <a href="singlepg.html #contact">Contact us</a>
+                  
+                    </div>
+                    </div>
+                    
+                 <br><br>
+       
+            <section>
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form"><br>
+                            <form method="post">
+                                <h1 style="font-family:'Kaushan Script', cursive;">Log In<br><span>Click <strong>"Join us"</strong> to see the form switch</span>
+                                </h1>
+
+                                <p>
+                                    <label for="username" class="uname" data-icon="u" >Your email or username</label>
+                                    <input id="username" ng-model="username" required="required" type="text" placeholder="enter your name"/>
+                                </p>
+                                <p>
+                                    <label for="password" class="youpasswd" data-icon="p"> Password</label>
+                                    <input id="password" ng-model="password" required="required" type="password" placeholder="enter your password" />
+                                </p>
+
+                                <p class="keeplogin">
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button">
+                                    <input type="submit" ng-click="giveLogin()" value="Login" />
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register"><b>Join us</b></a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div ng-app="myApp" ng-controller="RegisterController">
+                        <div id="register" class="animate form">
+                            <form  method="post">
+                                <h1 style="font-family: 'Kaushan Script', cursive;"> Register </h1>
+
+                               <p>
+    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" ng-model="name" required="required" type="text" placeholder="enter your name" />
+                                </p>
+                                <p>
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" ng-model="email" required="required" type="email" placeholder="enter your email"/>
+                                </p>
+                                <p>
+                                        <label for="Phone" class="youmail" data-icon="" > Phone no.</label>
+                                        <input id="phonesignup" ng-model="phone" required="required" type="number" placeholder="enter your contact number"/>
+                                    </p>
+
+                                <p>
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" ng-model="password" required="required" type="password" placeholder="enter your password"/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" ng-model="cpassword" required="required" type="password" placeholder="confirm your password"/>
+                                </p>
+                                <p class="signin button">
+									<input type="submit" ng-click="giveRegistration()" value="submit"/>
+								</p>
+                                <p class="change_link">
+									Already a member ?
+									<a href="#tologin" class="to_register"><b> Go and log in</b> </a>
+								</p>
+                            </form>
+                        </div>
+</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="indexfooter">
+  
+                    <footer><b>&copy;CopyrightReservedforVenyou</b></footer>
+                    </div>
+                  
+    </body>
+</html>

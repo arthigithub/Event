@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pay.css">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/billing.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="payment.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="event.css" />
+    
+    <script src="main.js"></script>
+<style>
+
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Courgette|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+      
+
+</style>
+</head>
+<body ng-app="myApp" ng-controller="paymentController" style="background-image: url('images/brown-vintage-pattern.jpg')">
+<div style="background-color: rgb(10, 1, 26)">
+    <p align="center" style="font-size: 5.5pc;font-family: 'Tangerine', cursive; font-weight:900;height: 6pc;
+    color: white;" class="animated zoomIn">VenYou
+      </p>
+
+  
+
+  <div id="navbar">
+        
+
+      <a href="singlepg.html" class="a">Home</a>
+      <a href="singlepg.html #About">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="singlepg.html #feedback">Feedback</a>
+      <a href="index.html">Login</a>
+      <a href="singlepg.html #contact">Contact us</a>
+
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="mynewFunction()">Services
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="wedding.html">Wedding</a><br>
+          <a href="birthday.html">Birthday</a><br>
+          <a href="naming.html">Naming ceremony</a><br>
+          <a href="concert.html">Concerts</a><br>
+          <a href="office.html">Official</a><br>
+          <a href="festival.html">Festivals</a><br>
+          <a href="college.html">College Events</a><br>
+
+        </div>
+      </div>
+     
+    </div>
+    </div>
+
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+
+          function mynewFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+            }
+          }
+          </script>
+
+
+<br>
+<div class="container">
+<form method="post">
+          <div class="col-50">
+            <h1><b style="font-family: 'Kaushan Script', cursive;font-size: 2pc">Payment</b></h1><br><br>
+           <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname" style="margin-right:390px;">Name on Card</label>
+            <input type="text" id="cname" ng-model="cardname" placeholder="">
+            <label for="ccnum" style="margin-right:350px;">Credit card number</label>
+            <input type="text" id="ccnum" ng-model="credit_card_no" placeholder="">
+            <label for="expmonth" style="margin-right:420px;">Exp Month</label>
+            <input type="text" id="expmonth" ng-model="exp_month" placeholder="">
+                <label for="expyear" style="margin-right:440px;">Exp Year</label>
+                <input type="text" id="expyear" ng-model="exp_year" placeholder="">
+                <label for="cvv" style="margin-right:480px;">CVV</label>
+                <input type="text" id="cvv" ng-model="cvv" placeholder="">
+                <input type="submit" value="Payment"  ng-click="givePayment()">
+
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  
+
+       
+    <!--</div>
+  </div>-->
+</form>
+</div>
+</div>
+
+<a href="singlepg.html"><button type="submit" class="btn">Submit</button></a>
+
+
+
+<div class="eventfooter">
+    <footer><b style="color: black">&copy;CopyrightReservedforVenyou</b></footer>
+    </div>
+  
+</body>
+</html>

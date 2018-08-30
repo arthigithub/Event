@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="js/billing.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="event.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="billing.css" />
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Courgette|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+
+
+</style>
+</head>
+<body ng-app="myApp" ng-controller="billingController" style="background-image: url('images/brown-vintage-pattern.jpg')">
+    
+<div style="background-color: rgb(10, 1, 26)">
+    <p align="center" style="font-size: 5.5pc;font-family: 'Tangerine', cursive; font-weight:900;height: 6pc;
+    color: white;" class="animated zoomIn">VenYou
+      </p>
+
+  
+
+  <div id="navbar">
+        
+
+      <a href="singlepg.html" class="a">Home</a>
+      <a href="singlepg.html #About">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="singlepg.html #feedback">Feedback</a>
+      <a href="index.html">Login</a>
+      <a href="singlepg.html #contact">Contact us</a>
+
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="mynewFunction()">Services
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="wedding.html">Wedding</a><br>
+          <a href="birthday.html">Birthday</a><br>
+          <a href="naming.html">Naming ceremony</a><br>
+          <a href="concert.html">Concerts</a><br>
+          <a href="office.html">Official</a><br>
+          <a href="festival.html">Festivals</a><br>
+          <a href="college.html">College Events</a><br>
+
+        </div>
+      </div>
+     
+    </div>
+    </div>
+
+
+           <script>
+             window.onscroll = function() {myFunction()};
+
+             var navbar = document.getElementById("navbar");
+             var sticky = navbar.offsetTop;
+
+             function myFunction() {
+               if (window.pageYOffset >= sticky) {
+                 navbar.classList.add("sticky")
+               } else {
+                 navbar.classList.remove("sticky");
+               }
+             }
+
+             function mynewFunction() {
+                 document.getElementById("myDropdown").classList.toggle("show");
+             }
+
+             // Close the dropdown if the user clicks outside of it
+             window.onclick = function(e) {
+               if (!e.target.matches('.dropbtn')) {
+                 var myDropdown = document.getElementById("myDropdown");
+                   if (myDropdown.classList.contains('show')) {
+                     myDropdown.classList.remove('show');
+                   }
+               }
+             }
+             </script>
+
+
+<br><br>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form method="post">
+
+        <div class="row">
+          <div class="col-50">
+            <h1><b style="font-family: 'Kaushan Script', cursive;font-size: 3pc">Billing Address</b></h1>
+            <br>
+            <label for="fname" style="margin-right:445px;"  ><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" ng-model="firstname" placeholder="">
+            <label for="email"  style="margin-right:475px;"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" ng-model="email" placeholder="">
+            <label for="adr" style="margin-right:450px;"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" ng-model="address" placeholder="">
+            <label for="city" style="margin-right:480px;"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" ng-model="city" placeholder="">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" ng-model="state" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="PinCode">PinCode</label>
+                <input type="text" id="zip" ng-model="zip" placeholder="">
+                <input type="submit" value="billing" ng-click="giveBilling()">
+              
+              </div>
+            </div>
+          </div>
+        
+       
+      </form>
+    </div>
+  </div>
+  </div>
+  
+  <div id="next">
+    <br><a href="payment.html"><button class="btn success"><b>Submit</b></button></a>
+  </div>
+
+
+<div class="eventfooter">
+    <footer><b style="color: black">&copy;CopyrightReservedforVenyou</b></footer>
+    </div>
+  </body>
+</html>

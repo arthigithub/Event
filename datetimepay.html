@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="req.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="event.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+    <script src="main.js"></script>
+
+
+
+    <style>
+
+         @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+       
+       #abt
+       {
+         animation-duration: 5s;
+         opacity: 1.0;
+       }
+
+       #p1
+       {
+          animation-duration: 3s;
+       }
+
+        </style>
+
+</head>
+<body style="background-image: url('images/brown-vintage-pattern.jpg')">
+
+        <div style="background-color: rgb(10, 1, 26)">
+            <div>
+                <p align="center" style="font-size: 5.5pc;font-family: 'Tangerine', cursive; font-weight:900;height: 6pc;
+                color:white;" class="animated zoomIn">VenYou
+                  </p>
+            
+              </div>
+          
+      
+              <div id="navbar">
+        
+
+                    <a href="singlepg.html" class="a">Home</a>
+                    <a href="singlepg.html #About">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="singlepg.html #feedback">Feedback</a>
+                    <a href="index.html">Login</a>
+                    <a href="singlepg.html #contact">Contact us</a>
+              
+              
+                    <div class="dropdown">
+                      <button class="dropbtn" onclick="mynewFunction()">Services
+                      </button>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="wedding.html">Wedding</a><br>
+                        <a href="birthday.html">Birthday</a><br>
+                        <a href="naming.html">Naming ceremony</a><br>
+                        <a href="concert.html">Concerts</a><br>
+                        <a href="office.html">Official</a><br>
+                        <a href="festival.html">Festivals</a><br>
+                        <a href="college.html">College Events</a><br>
+              
+                      </div>
+                    </div>
+                   
+                  </div>
+                  </div>
+              
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            function mynewFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                  if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                  }
+              }
+            }
+            </script><br><br>
+
+
+<!--<div class="qoutes">
+    <p><font sixe="10px">fgg dfrwt dxgfjk adaewsty fsfsczcv<br>
+        sgdtcucb ssf yudjsv<br>
+        ssvvbbnn hjhgh</font>
+    </p>
+    </div>-->
+
+ <div class="containerdate" ng-app="myApp" ng-controller="myCtrl">
+
+            
+    
+    <div class="order">
+        
+        
+        <h3 align="center"><b>Event details</b></h3><hr>
+        <form>
+            <div class="row">
+            <div class="col-25">
+              <label for="date" id="label" class="label"><font color="black" size="2.5pc"><b>Date</b></font></label></div>
+                <div class="col-50"> <input type="date" name="date" value="date"><font size="20px"></font></div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="time" class="label"><font color="black" size="2.5pc"><b>Time</b></font></label></div>
+                <div class="col-50"><input type="time" name="time" value="time"><br><br></div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="address" class="label"><font color="black" size="2.5pc"><b>Venue</b></font></label></div>
+                    <div class="col-50"><select name="food" style="width: 300px;height: 50px;" ng-model="selectedName" ng-options="x for x in names" >
+                    </select></div>
+            </div>   
+            <div class="row">
+                 <div class="col-25">
+                     <label for="accomodation" id="label" class="label"><font color="black" size="2.5pc"><b>No. of people</b></font></label></div>
+                        <div class="col-50"><input type="number" name="number" value="number" ng-model="members"></div>
+             </div> 
+                            
+                <h3 align="center" class="req"><b>Your Requirments</b></h3><hr>                
+                <div class="row">
+                    <div class="col-25">
+                    <label for="food" class="label"><font color="black"size="2.5pc" ><b>Food</b></font></label></div>
+                         <div class="col-50"><select name="food" style="width: 300px;height: 50px;" ng-model="selectedName1" ng-options="a for (a, b) in name1" >
+                                    </select></div>
+                            
+                 </div>    
+            <div class="row">
+               <div class="col-25">
+                 <label for="drinks" class="label"><font color="black" size="2.5pc"><b>Drinks</b></font></label></div>
+                 <div class="col-50"> <select name="drinks" style="width: 300px;height: 50px;" ng-model="selectedName2" ng-options="y for (y,z) in name2">
+                     </select><hr></div>
+                    </div>
+         <div class="row">
+            <div class="col-25">
+              <label for="cake" class="label"><font color="black" size="2.5pc"><b>Cake</b></font></label></div>
+                    <div class="col-50"><select name="cake" id="" style="width: 300px;height: 50px;" ng-model="selectedName3" ng-options="r for (r,s) in name3" >
+                                                            </select></div>
+         </div>  
+         <div class="row">
+            <div class="col-25">
+                 <label for="food" class="label"><font color="black" size="2.5pc"><b>Weight</b></font></label></div>
+         <div class="col-50"><input type="number" name="cake_kg" value="kg" ng-model="weight"><br><br></div>
+         
+        </div>  
+    <div class="row">
+         <div class="col-25">
+             <label for="props" class="label"><font color="black" size="2.5pc"><b>Themes</b></font></label></div>
+     <div class="col-50"><select name="properties" style="width: 300px;height: 50px;" ng-model="selectedName4" ng-options="p for (p,q) in name4">
+                                     </select><hr></div>
+</div>  
+<div class="row">
+     <div class="col-25">
+             <label for="music" class="label"><font color="black" size="2.5pc"><b>Music</b></font></label></div>
+                    <div class="col-50"><select name="properties" style="width: 300px;height: 50px;" ng-model="selectedName5" ng-options="m for (m,n) in name5">
+                                                                                    </select><hr></div>
+ </div>   
+ <div class="row">
+        <div class="col-25">
+                <label for="music" class="label"><font color="black" size="2.5pc"><b>Photography</b></font></label></div>
+                       <div class="col-50"><select name="properties" style="width: 300px;height: 50px;" ng-model="selectedName6" ng-options="j for j in name6">
+                                                                                       </select><hr></div>
+    </div> 
+    <div class="row">
+            <div class="col-25">
+                    <label for="music" class="label"><font color="black" size="2.5pc"><b>Lighting</b></font></label></div>
+                           <div class="col-50"><select name="properties" style="width: 300px;height: 50px;" ng-model="selectedName7" ng-options="g for g in name7">
+                                                                                           </select><hr></div>
+        </div> 
+ 
+        </form>
+        <h3>Total Amount: {{(selectedName1*members) + (selectedName2*members) + (selectedName3*weight) 
+            +selectedName4+selectedName5 + selectedName6 + selectedName7}}</h3>
+    </div>
+
+    <div id="next">
+        <br><a href="billing.html"><button class="btn success"><b>Order</b></button></a>
+      </div>
+</div>
+
+<div class="eventfooter">
+        <footer><b>&copy;CopyrightReservedforVenyou</b></footer>
+        </div>
+      
+            
+       
+              
+</body>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+    $scope.names = ['Dehli',
+                'Gurgoan','Ghaziabad','Kolkata','Banglore','Indore','Mumbai','Hyderabad','Ahmedabad','Pune','Chennai',
+                'Jaipur','Noida','Chandigarh','other'];
+     $scope.name1 = { veg : 100, nonveg : 200,both : 300,Notrequired:0 }
+     $scope.name2={FruitJuices:50,ColdDrink:60,SoftDrink:80,Notrequired:0};
+     $scope.name3={vanilla:100,strawberry:150,Choclate:300,ButterScotch:250,Pineapple:200,BlackCurrent:400,Notrequired:0};
+     $scope.name4={Ballons:2000,Hangings:3000,ChildrenMasks:2550,Notrequired:0};
+     $scope.name5={LightMusic:5000,PopMusic:4500,RockMusic:6000,MusicBand:10000,DJNights:8000,Notrequired:0};
+     $scope.name6=[10000,30000,50000,75000,100000,0];
+     $scope.name7=[10000,25000,50000,100000,0];
+    });
+   
+    </script>
+</html>

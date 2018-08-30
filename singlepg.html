@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="nav.css">
+      <link rel="stylesheet" type="text/css" href="event.css">
+      <link rel="stylesheet" type="text/css" href="cf.css">
+      
+
+      <script src="https://ajax.aspnetcdn.com/ajax/modenizr/modernizr-2.7.2.js">
+
+
+        </script>
+    
+    <style>
+       @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+       
+        /*------*/
+        .fa {
+                width: 50px;
+                 font-size: 38px;
+                 height: 40px;
+                 text-align: center;
+                 text-decoration: none;
+                 margin: 5px 2px;
+                 border-radius: 100%;
+               }
+               
+               .fa:hover {
+                   opacity: 0.7;
+               }
+               
+               .fa-facebook {
+                 background: #3B5998;
+                 color: white;
+               }
+               
+               .fa-twitter {
+                 background: rgb(24, 104, 165);
+                 color: white;
+               }
+               
+               .fa-google {
+                 background: #04700d;
+                 color: white;
+               }
+               
+               .fa-youtube {
+                 background: #bb0000;
+                 color: white;
+               }
+               
+               .fa-instagram {
+                 background: #125688;
+                 color: white;
+               }
+               #social{
+                 position: absolute;
+                 left:40%;  
+               }
+
+        </style>
+
+</head>
+<body>
+
+    <div id="Home">
+       
+        <img class="mySlides" src="images/mar.jpg">
+        <img class="mySlides" src="images/birthday-party4.jpg">
+        <img class="mySlides" src="images/holi1.jpg">
+</div>
+        
+        <!--slideshow-->
+   <script>
+    var myIndex = 0;
+    carousel();
+  
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+  
+    </script>
+
+        <div style="background-color: rgb(10, 1, 26)">
+          <div>
+        <p align="center" style="font-size: 6pc;font-family: 'Tangerine', cursive; font-weight:900;height: 7pc;
+        color:rgb(245, 245, 245);" class="animated zoomIn">VenYou
+          </p>
+          </div>
+        
+   <div id="navbar">
+        
+
+      <a href="singlepg.html" class="a">Home</a>
+      <a href="singlepg.html #About">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="singlepg.html #feedback">Feedback</a>
+      <a href="index.html">Login</a>
+      <a href="singlepg.html #contact">Contact us</a>
+
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="mynewFunction()">Services
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="wedding.html">Wedding</a><br>
+          <a href="birthday.html">Birthday</a><br>
+          <a href="naming.html">Naming ceremony</a><br>
+          <a href="concert.html">Concerts</a><br>
+          <a href="office.html">Official</a><br>
+          <a href="festival.html">Festivals</a><br>
+          <a href="college.html">College Events</a><br>
+
+        </div>
+      </div>
+     
+    </div>
+    </div>
+
+
+         <script>
+           window.onscroll = function() {myFunction()};
+
+           var navbar = document.getElementById("navbar");
+           var sticky = navbar.offsetTop;
+
+           function myFunction() {
+             if (window.pageYOffset >= sticky) {
+               navbar.classList.add("sticky")
+             } else {
+               navbar.classList.remove("sticky");
+             }
+           }
+
+           function mynewFunction() {
+               document.getElementById("myDropdown").classList.toggle("show");
+           }
+
+           // Close the dropdown if the user clicks outside of it
+           window.onclick = function(e) {
+             if (!e.target.matches('.dropbtn')) {
+               var myDropdown = document.getElementById("myDropdown");
+                 if (myDropdown.classList.contains('show')) {
+                   myDropdown.classList.remove('show');
+                 }
+             }
+           }
+           </script>
+           
+
+
+    <!--navigation-->
+   
+  
+      <!--separate pages-->
+  <br>
+
+<div  id="About" style="background-color: rgba(95, 92, 92, 0.918)">
+  <div><br><br></div>
+
+          <div class="aboutus">
+  
+                
+<br><br>
+                  <div style="background-color: rgba(95, 92, 92, 0.918)">
+                    <br>
+                  <h1 align="center" style="font-family: 'Kaushan Script', cursive;font-size: 4pc;color: rgb(5, 5, 5)"><b><u>About Us</u></b></h1>
+                    <br></div><br><br>
+                      <div class="pa">
+
+
+      <p  align="center" style="    font-family: 'Slabo 27px', serif;;font-size: 1.05pc"><b>
+
+          Every success story begins with a vision. In the year 2013, a young entrepreneur understood the importance of a highly efficient and customized conference <br>
+          specialist entity and thus was born VenYou with a mandate of Adding Values to each and every event handled by it. Over the last year and a half , VenYou has <br>
+          grown consistently both horizontally as well as vertically . Delivering customized , cost effective and long term solutions to our clients and in the process <br>
+          setting new benchmarks of excellence has been the standard operating procedure at VenYou. The fact that we have handled over 100 events of various magnitude,<br>
+           handled a guest list that has seen successive Prime Ministers and Presidents of India apart from luminaries, political and business dignitaries from all over<br>
+          the world,is a testimony to our excellence and exceeding expectations of our esteemed clients.<br>
+
+          <b style="font-family: 'Lora', serif;font-size: 1.8pc"><u>Why VenYou ?</u></b><br>
+
+           With great work comes great responsibility. The team at VenYou believes in this adage and we put in optimum resources, latest technology, best of experience<br>
+         and personalized services to efficiently organize our  events and to ensure that we add value to the original outcome of the event . We focus on not just organizing<br>
+          a gathering , rather, we endeavour to create a successful convergence of people to achieve a result that not only meets all the expectations of the client.<br>
+           The 5 plus years and 100 plus successful events , make our team one of the most prepared group of professionals that Indian MICE industry can claim of .<br>
+            We strongly benefit from our positive outlook and a Can do attitude. With a wide ranging experience, our team understands the needs and goals of client events.<br>
+
+
+        <b style="font-family: 'Lora', serif;font-size: 1.8pc"> <u>Our Vision</u></b><br>
+          "To become the most preferred 'Meetings Services'company for our stakeholders (customers, participants, employees, vendors, shareholders and society) and<br> double our
+          value (turnover and profits) every two years till 2020".<br>
+
+          <b  style="font-family: 'Lora', serif;font-size: 1.8pc"><u>Our mission</u></b><br>
+           Mandate is Adding Value to everything that we do. We constantly achieve excellence by combining the elements of energy, strategy, creativity and technology<br>
+           to exceed expectations of our clients. Our commitment to our mission of Adding value is absolute and through our immense experience, we optimally <br>
+           achieve the purpose of conducting the client event and we put strong emphasis on not just hassle free organization of the event, achieving the client long term objectives.<br>
+
+                      </b> </p>
+          </div>
+          <br>
+          <h1 align="center" style="font-family: 'Kaushan Script', cursive;color: white;"><b><u>Our Team Members</u></b></h1>
+          <div>
+
+              <img src="images/male.png" style="width: 160px;height: 200px;" class="border">
+              <img src="images/FemaleAvatar-1.png" style="width: 160px;height: 200px;"  class="border">
+              <img src="images/FemaleAvatar-1.png" style="width: 160px;height: 200px;" class="border">
+              <img src="images/male.png" style="width: 160px;height: 200px;"  class="border">
+              <img src="images/FemaleAvatar-1.png" style="width: 160px;height: 200px;" class="border">
+              <img src="images/male.png" style="width: 160px;height: 200px;" class="border">
+              <img src="images/FemaleAvatar-1.png" style="width: 160px;height: 200px;" class="border">
+            </div><br><br><br><br>
+            
+
+
+
+</div>
+</div>
+
+<br>
+
+
+<div class="contact" id="contact">
+    <br><br><br><br><br><br><br><br><br><br>
+        <p><b>Let's get in touch</b></p>
+        <p><b>Ready to start your event with us?That's great!Give us a call or send us an email<br>
+          and we will get you back soon as soon as possible!</b></p>
+    <div class="col-sm-6">
+      <br><br>
+          <img src="images/icons8-phone-30.png" id="spimg"><br>
+          <p><b>123-456-7890</b></p>
+        </div>
+        <div class="col-sm-6">
+          <br><br><img src="images/icons8-secured-letter-48.png" id="spimg"><br>
+          <p><u><b>venyou@gmail.com</b></u></p>
+    
+      </div><br><br>
+      </div>
+
+
+      
+      <div id="feedback">
+
+
+        
+          <div class="container">
+              <h1 class="hfeedback"><b  style="font-family: 'Kaushan Script', cursive;font-size: 4pc">Feedback</b></h1>
+            <form>
+                <div class="col-sm-6" id="div1">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" ng-model="email" placeholder="Your email.." ><br>
+
+                  <label for="subject">Command</label>
+                  <textarea id="subject" ng-model="subject" placeholder="Write something.." ></textarea><br><br><br>
+               <button>Submit</button>
+              </div>
+            </form>
+            <div class="col-sm-6" id="div2">
+                <img src="images/icons8-happy-50.png" class="img1">
+                <img src="images/icons8-neutral-50.png" class="img1">
+                <img src="images/icons8-sad-50.png" class="img1"><br>
+                <input type="radio" class="img2" name="feedback">
+                <input type="radio" class="img2" name="feedback" >
+                <input type="radio" class="img2" name="feedback" checked>
+            </div>
+          </div>
+
+          <div id="social">
+          
+              <!-- Add font awesome icons -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              </div>
+    
+          </div><br><br>
+          
+          <div class="eventfooter">
+<footer><b>&copy;CopyrightReservedforVenyou</b></footer>
+              </div>
+             
+</body>
+</html>
